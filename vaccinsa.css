@@ -1,0 +1,33 @@
+.custom-font{
+    font-family: 'Noto Sans KR';
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+}
+
+.v-header{
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.v-header h1{
+    position: relative;
+    font-size: 256px;
+}
+
+.v-header h2{
+    position: relative;
+    font-size: 32px;
+}
+
+.do{
+    font-size: 64px;
+    color: rgb(118, 255, 180);
+}
