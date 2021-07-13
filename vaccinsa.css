@@ -29,5 +29,19 @@
 
 .do{
     font-size: 64px;
-    color: rgb(118, 255, 180);
+    color: yellow;
+}
+
+.main{
+    height: 100vh;
+    width: auto;
+    text-align: center;
+}
+
+.main h1{
+    font-size: 4rem;
+}
+
+.main p{
+    font-size: 2rem;
 }

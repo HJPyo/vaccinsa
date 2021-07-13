@@ -50,6 +50,29 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="container h-75 p-5">
+		<div class="main">
+			<h1>전국의 모든백신을 한번에</h1>
+			<p>자신이 살고 있는 지역의 백신정보를 아래의 지도에서 확인하세요.</p>
+		</div>
+		<div id="map" style="width:750px;height:350px;"></div>
+
+		<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=39f037278a4d5f8dbf9b4a524936141a"></script>
+		<script>
+			var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+				mapOption = {
+					center: new kakao.maps.LatLng(37.56682, 126.97865), // 지도의 중심좌표
+					level: 3, // 지도의 확대 레벨
+					mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+				};
+
+			// 지도를 생성한다 
+			var map = new kakao.maps.Map(mapContainer, mapOption);
+
+		</script>
+	</div>
+
 	<script src="./vaccinsa.js"></script>
 </body>
 
