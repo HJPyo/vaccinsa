@@ -12,3 +12,12 @@ fetch(url)
 	.catch(function (err) {
 		console.log(err);
 	});
+
+var mapContainer = document.getElementById('map'),
+	mapOption = {
+		center: new kakao.maps.LatLng(36.33085, 127.80683),
+		level: 13,
+		mapTypeId: kakao.maps.MapTypeId.ROADMAP
+	};
+
+var map = new kakao.maps.Map(mapContainer, mapOption);
