@@ -18,12 +18,16 @@ fetch(url)
 
 		var map = new kakao.maps.Map(mapContainer, mapOption);
 
+		var mark = [];
+
 		for(var i = 0; i < 280; i++){
-			var marker = new kakao.maps.Marker({
+			mark.push = new kakao.maps.Marker({
 				position: new kakao.maps.LatLng(Number(mydata[i].lat), Number(mydata[i].lng)),
 				map: map
 			});
 		}
+
+		console.log("UPDATED");
 	})
 	.catch(function (err) {
 		console.log(err);
